@@ -28,11 +28,11 @@
 
                   </div>
                   <div id="weather">
-                        <img src="img/weather.png" alt="weather">
-                  </div>
+                        <span id="temperature">+22 &deg;C</span>
+                 </div>
                   <form id="search">
-                        <input type="search" placeholder="Поиск по сайту">
-                        <button type="submit"></button>
+                        <input id="search-form" type="search" placeholder="Поиск по сайту" name="search">
+                        <button type="submit" name="search"></button>
                   </form>
             </div>
       </div>
@@ -70,7 +70,7 @@
                               </div>
                               <div class="news-item-props">
                                     <a href="#">/ЧМ по футболу</a>
-                                    <div class="news-time">10:48</div>
+                                    <div class="news-time"><time>10:48</time></div>
                                     <div class="news-comment-count">15</div>
                               </div>
                         </div>
@@ -80,7 +80,7 @@
                               </div>
                               <div class="news-item-props">
                                     <a href="#">/Политика</a>
-                                    <div class="news-time">10:48</div>
+                                    <div class="news-time"><time>10:48</time></div>
                                     <div class="news-comment-count">15</div>
                               </div>
                         </div>
@@ -90,7 +90,7 @@
                               </div>
                               <div class="news-item-props">
                                     <a href="#">/Транспорт</a>
-                                    <div class="news-time">10:48</div>
+                                    <div class="news-time"><time>10:48</time></div>
                                     <div class="news-comment-count">15</div>
                               </div>
                         </div>
@@ -100,7 +100,7 @@
                               </div>
                               <div class="news-item-props">
                                     <a href="#">/Погода</a>
-                                    <div class="news-time">10:48</div>
+                                    <div class="news-time"><time>10:48</time></div>
                                     <div class="news-comment-count">15</div>
                               </div>
                         </div>
@@ -110,7 +110,7 @@
                               </div>
                               <div class="news-item-props">
                                     <a href="#">/Транспорт</a>
-                                    <div class="news-time">10:48</div>
+                                    <div class="news-time"><time>10:48</time></div>
                                     <div class="news-comment-count">15</div>
                               </div>
                         </div>
@@ -120,7 +120,7 @@
                               </div>
                               <div class="news-item-props">
                                     <a href="#">/ЧМ по футболу</a>
-                                    <div class="news-time">10:48</div>
+                                    <div class="news-time"><time>10:48</time></div>
                                     <div class="news-comment-count">15</div>
                               </div>
                         </div>
@@ -130,15 +130,16 @@
                         <div id="central-banner1">
                               <img alt="cremea" src="img/central-banner1.png" height="100%">
                               <div id="news-central-item">
-                                    <div id="news-central-text">
-                                          <h2 class="h2-banner">В Крыму отреагировали<br> на слова Кравчука<br> о возврате полуострова</h2>
-                                    </div>
                                     <div id="news-central-theme">
                                           <a href="https://ru.wikipedia.org/wiki/Политика" target="_blank">/&nbsp;Политика</a>
                                     </div>
+                                    <div id="news-central-text">
+                                          <h2 class="h2-banner">В Крыму отреагировали<br> на слова Кравчука<br> о возврате полуострова</h2>
+                                    </div>
                                     <div id="news-central-props">
-                                          <div id="news-central-date">19 Июня 2018</div>
-                                          <div id="news-central-time">10:48</div>
+                                          <time><span id="news-central-date">19 Июня 2018</span>
+                                                <span id="news-central-time">10:48</span>
+                                          </time>
                                     </div>
                               </div>
                         </div>
