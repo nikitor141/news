@@ -19,8 +19,15 @@ h1 {
 #black-bar {
      background-color: #00122f;
      color: white;
-     padding: 20px 0;
+     padding: 0px 0;
       font-size: 16px;
+      height: 58px;
+}
+#black-bar-content {
+      padding: 20px 0;
+}
+#black-bar h1{
+      float: left;
 }
 #black-bar a {
     color:white;
@@ -29,6 +36,7 @@ h1 {
     width: 960px;
     margin: 0 auto;
    position: relative;
+      
 }
 #header {
       height: 100px;
@@ -37,14 +45,19 @@ h1 {
     float: right;
 }
 
+
+
+
+
 #logo {
-      position: absolute;
-      top: 40px;
+      float: left;
+      margin-top: 40px;
+      margin-right: 62px;
+            
 }
 #city {
-      position: absolute;
-      top: 54px;
-      left: 180px;
+      margin-top: 54px;
+      float: left;
 }
 #choice-city {
       border: none;
@@ -53,12 +66,13 @@ h1 {
       text-decoration: underline;
       text-decoration-style: dashed;
       width: auto;
+      cursor: pointer;
       
 }
 #weather {
-      position: absolute;
-      top: 54px;
-      left: 550px;
+      float: left;
+      margin-top: 54px;
+      margin-left: 210px
       
 }
 #temperature {
@@ -79,6 +93,7 @@ h1 {
       width: 281px;
       height: 35px;
       margin-top: 40px;
+      margin-left: 41px;
 }
 #search-form {
       border: none;
@@ -86,6 +101,7 @@ h1 {
       width: 100%;
       height: 100%;
       padding-left: 21px;
+      border-radius: 20px;
       
 }
 #search button {
@@ -96,85 +112,64 @@ h1 {
       border: none;
       position: absolute;
       right: 20px;
-      top: 9px;
+      top: 25%;
+      cursor: pointer;
+      
 }
+
+
+
 
 #page-nav {
       height: 70px;
+     
       
 }
 #menu {
-      position: relative;
       font-size: 16px;
+      margin: 0;
+      padding: 0;
 }
-#main, #polite, #social, #ec, #in-world, #incidents, #sport, #sience, #turism, .slash1, .slash2, .slash3, .slash4, .slash5, .slash6, .slash7, .slash8 {
-      position: absolute;
-      line-height: 62px;
-      
-}
-#polite{
-      left: 105px;
-}
-#social {
-      left: 215px;
-}
-#ec {
-      left: 328px;
-}
-#in-world {
-      left: 448px;
-}
-#incidents {
-      left: 540px;
-}
-#sport {
-      left: 680px;
-}
-#sience {
-      left: 768px;
-}
-#turism {
-      left: 851px;
+#main, #polite, #social, #ec, #in-world, #incidents, #sport, #sience, #turism {
+      float: left;
+      text-decoration-line: none;
+      color: #000000;
 }
 
-
-.slash1, .slash2, .slash3, .slash4, .slash5, .slash6, .slash7, .slash8{
-      font-size: 20px;
-      color: #e1e1e5;
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
-.slash1 {
-      left: 78px;
-      
+li {
+      padding-top: 22px;
+      margin-left: 34px;
+      display: inline-block;
 }
-.slash2 {
-      left: 191px;
+#li1 {
+      margin-left: 0;
 }
-.slash3 {
-      left: 305px;
+#li2 {
+      margin-left: 38px;
 }
-.slash4 {
-      left: 425px;
-}
-.slash5 {
-      left: 518px;
-}
-.slash6 {
-      left: 661px;
-}
-.slash7 {
-      left: 742px;
-}
-.slash8 {
-      left: 830px;
+#li8 {
+      margin-left: 37;
 }
 
+#shadow {
+      margin: 0;
+      padding: 0;
+      height: 20px;
+      width: 100%;
+      background: linear-gradient(to bottom, #f1f1f1, #f9f9f9);
+}
 
 #central-container{
-      padding-top: 20px;
+      padding-top: 0px;
       background-color: #f9f9f9;
-      background-image: url('img/central%20bg%20top.png');
-      background-repeat: repeat-x;
-      
+      /*background-image: url('img/central%20bg%20top.png');
+      background-repeat: repeat-x;*/
+       
 }
       #central-container .fixed-container {
             overflow-y: hidden;
@@ -230,6 +225,7 @@ h1 {
                   border-color: #608bc7;
                   outline: 0;
                   border: 1px solid;
+                  cursor: pointer;
                   
                         
 }
@@ -241,7 +237,6 @@ h1 {
       float: left;
 }
 #central-banner1 {
-   /* background-image: url(img/central-banner1.png);*/
       width: 422px;
       height: 294px;
       margin-bottom: 15px;
@@ -362,7 +357,24 @@ h1 {
 
 }
 #special-news {
-      background-color: #f9f9f9;
+      background-color: ;
       padding-top: 20px;
-      height: 472px;
+      padding-bottom: 59px;
+}
+#pekin {
+      float: left;
+}
+#hot-news {
+      float: left;
+      width: 388px;
+      height: 321px;
+}
+#hot-news-content {
+      margin-left: 19px;
+}
+#hot-h2 {
+      padding-left: 0;
+}
+#hot-news-item {
+      padding-left: 0;
 }
