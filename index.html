@@ -9,14 +9,14 @@
 
 <body>
       <div id="black-bar">
-            <div class="fixed-container">
+            <div id="black-bar-content" class="fixed-container">
                   <h1>Самые <a href="#">свежие новости</a> в реальном времени</h1>
                   <time id="datetime">12:30 19.06.2018</time>
             </div>
       </div>
       <div id="header">
             <div class="fixed-container">
-                  <a href="#"><img id="logo" src="img/logo.png" alt="logo"></a>
+                  <a href="https://nikitor141.github.io/nikitor141"><img id="logo" src="img/logo.png" alt="logo"></a>
                   <div id="city">
 
                         <select id="choice-city" name="city">
@@ -29,7 +29,7 @@
                   </div>
                   <div id="weather">
                         <span id="temperature">+22 &deg;C</span>
-                 </div>
+                  </div>
                   <form id="search">
                         <input id="search-form" type="search" placeholder="Поиск по сайту" name="search">
                         <button type="submit" name="search"></button>
@@ -38,31 +38,23 @@
       </div>
       <nav id="page-nav">
             <div class="fixed-container">
-                  <div id="menu">
-                        <div id="main">Главная</div>
-                        <div id="polite">Политика</div>
-                        <div id="social">Общество</div>
-                        <div id="ec">Экономика</div>
-                        <div id="in-world">В мире</div>
-                        <div id="incidents">Происшествия</div>
-                        <div id="sport">Спорт</div>
-                        <div id="sience">Наука</div>
-                        <div id="turism">Туризм</div>
-                        <div class="slash1">/</div>
-                        <div class="slash2">/</div>
-                        <div class="slash3">/</div>
-                        <div class="slash4">/</div>
-                        <div class="slash5">/</div>
-                        <div class="slash6">/</div>
-                        <div class="slash7">/</div>
-                        <div class="slash8">/</div>
-
-                  </div>
+                  <ul id="menu">
+                        <li id="li1"><a href="#" id="main">Главная</a></li>
+                        <li id="li2"><a href="#" id="polite">Политика</a></li>
+                        <li><a href="#" id="social">Общество</a></li>
+                        <li><a href="#" id="ec">Экономика</a></li>
+                        <li><a href="#" id="in-world">В мире</a></li>
+                        <li><a href="#" id="incidents">Происшествия</a></li>
+                        <li><a href="#" id="sport">Спорт</a></li>
+                        <li id="li8"><a href="#" id="sience">Наука</a></li>
+                        <li><a href="#" id="turism">Туризм</a></li>
+                  </ul>
             </div>
       </nav>
+      <div id="shadow"></div>
       <main id="central-container">
             <div class="fixed-container">
-                  <div id="column-left">
+                  <section id="column-left">
                         <h2 class="h2">Новости дня</h2>
                         <div class="news-item">
                               <div class="news-item-text">
@@ -125,8 +117,8 @@
                               </div>
                         </div>
                         <button>Все новости</button>
-                  </div>
-                  <div id="column-center">
+                  </section>
+                  <section id="column-center">
                         <div id="central-banner1">
                               <img alt="cremea" src="img/central-banner1.png" height="100%">
                               <div id="news-central-item">
@@ -189,18 +181,37 @@
                                     </div>
                               </div>
                         </div>
-                  </div>
-                  <div id="column-right">
+                  </section>
+                  <aside id="column-right">
                         <img alt="banner" src="img/banner1.png">
                         <img alt="banner" src="img/banner2.png">
+                  </aside>
+            </div>
+
+
+            <div id="special-news">
+                  <div class="fixed-container">
+                        <section id="pekin">
+                              <img alt="banner" src="img/special-news-banner.jpg" width="572">
+                        </section>
+                        <section id="hot-news">
+                              <div id="hot-news-content">
+                                    <h2 class="h2" id="hot-h2">Самые читаемые новости</h2>
+                                    <div class="news-item" id="hot-news-item">
+                                          <div class="news-item-text">
+                                                <h3>В Турции пообещали найти альтернативу из-за отказа США поставить F-35</h3>
+                                          </div>
+                                          <div class="news-item-props">
+                                                <a href="#">/ЧМ по футболу</a>
+                                                <div class="news-time"><time>10:48</time></div>
+                                                <div class="news-comment-count">15</div>
+                                          </div>
+                                    </div>
+                              </div>
+                        </section>
                   </div>
             </div>
       </main>
-      <div id="special-news">
-            <div class="fixed-container">
-
-            </div>
-      </div>
 </body>
 
 </html>
