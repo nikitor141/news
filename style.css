@@ -1,8 +1,13 @@
 html, body {
     margin: 0;
     padding: 0;
-    min-width: 1000px;
     font-family: Arial;
+    min-width: 320px;
+
+}
+*{
+  margin: 0;
+  padding:0;
 }
 input:focus, button:focus, select:focus {
   outline: none;
@@ -22,12 +27,12 @@ h1 {
 #black-bar {
      background-color: #00122f;
      color: white;
-     padding: 0px 0;
+     padding: 0px 0px;
       font-size: 16px;
-      height: 58px;
+      height: 55px;
 }
 #black-bar-content {
-      padding: 20px 0;
+      padding: 18px 20px;
 }
 #black-bar h1{
       float: left;
@@ -36,10 +41,10 @@ h1 {
     color:white;
 }
 .fixed-container {
-    width: 960px;
+    max-width: 960px;
+    padding: 0 20px;
     margin: 0 auto;
    position: relative;
-
 }
 #header {
       height: 100px;
@@ -49,15 +54,75 @@ h1 {
 }
 
 
-
-
+#mobile-nav {
+  width: 20px;
+  height: 16px;
+  background-image: url('img/mobile-nav.png');
+  background-repeat: no-repeat;
+  border: none;
+  margin-top: 17px;
+  margin-bottom: 17px;
+  display: none;
+  cursor: pointer;
+}
 
 #logo {
-      float: left;
-      margin-top: 40px;
-      margin-right: 62px;
-
+  box-sizing: border-box;
+  margin-top: 40px;
+  margin-right: 62px;
+  width: 122px;
+  height: 46px;
+  float: left;
 }
+#logo a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: black;
+}
+#logo img {
+  float: left;
+}
+#logo span {
+  float: left;
+  font-size: 14px;
+  font-weight: bold;
+  width: 67px;
+  margin-left: 9px;
+  margin-top: 5px;
+}
+#mobile-search {
+  width: 16px;
+  height: 16px;
+  background-image: url('img/search.png');
+  background-color: transparent;
+  display: none;
+  cursor: pointer;
+}
+#mobile-search-form {
+  float: left;
+  border: none;
+  height: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 212px;
+
+display: none;
+}
+#mobile-search-cross {
+  float: left;
+  width: 12px;
+  height: 12px;
+  background-image: url('img/nav-cross.png');
+  background-size: 12px 12px;
+  margin-top: 19px;
+  margin-bottom: 19px;
+
+  display: none;
+}
+
+
 #city {
       margin-top: 54px;
       float: left;
@@ -72,10 +137,41 @@ h1 {
       cursor: pointer;
 
 }
+#currency-container {
+  float: left;
+  margin-top: 56px;
+  margin-left: 30px;
+  font-size: 12px;
+  width: 143px;
+}
+#USD , #EUR {
+  color: #448ccb;
+  /* margin: auto auto; */
+}
+#EUR {
+  float: left;
+}
+#EUR-name {
+margin-bottom: 5px;
+}
+#EUR-CURS {
+  color: black;
+}
+#USD {
+  float: right;
+  /* width: 35px; */
+  margin-left: 10px;
+}
+#usd-name {
+  margin-bottom: 5px;
+}
+#USD-CURS {
+  color: black;
+}
 #weather {
       float: left;
       margin-top: 54px;
-      margin-left: 210px
+      margin-left: 45px
 
 }
 #temperature {
@@ -101,12 +197,28 @@ h1 {
 #search-form {
       border: none;
       background: transparent;
-      width: 100%;
+      width: 85%;
       height: 100%;
       padding-left: 21px;
       border-radius: 20px;
-
 }
+input[type=text]::-ms-clear {
+  display: none;
+  width : 0;
+  height: 0;
+ }
+input[type=text]::-ms-reveal {
+  display: none;
+  width : 0;
+  height: 0;
+ }
+ input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+   display: none;
+ }
+
 #search button {
       background-image: url(img/search-icon.png);
       width: 16px;
@@ -123,6 +235,9 @@ h1 {
 
 button {
   background-color: white;
+  border: none;
+  outline: none;
+  cursor: pointer;
 }
 
 #page-nav {
@@ -158,7 +273,7 @@ nav li {
       margin-left: 38px;
 }
 #li8 {
-      margin-left: 37;
+      margin-left: 37px;
 }
 
 #shadow {
@@ -361,12 +476,13 @@ nav li {
 
 
 #column-right {
-      width: 250px;
-      height: 425px;
       float: right;
+      width: 250px;
 }
-#column-right img{
+#column-right :first-child {
       margin-bottom: 20px;
+      width: 250px;
+      height: 400px;
 
 }
 #special-news {
@@ -518,21 +634,134 @@ nav li {
 footer {
     overflow: hidden;
 }
-#popup-container {
+#mobile-nav-shadow {
+  margin: 0;
+  padding: 0;
+  height: 15px;
+  width: 100%;
+  background: linear-gradient(to bottom, #f1f1f1, #f9f9f9);
+  background-repeat: no-repeat;
   display: none;
-  position: fixed;
+}
+#popup-container {
+  box-sizing: border-box;
   width: 100%;
   height: 100%;
-  background-image:url('img/bg.png');
+  position: fixed;
+  max-width: 100%;
+  background-color: #f9f9f9;
+  padding: 7px 25px;
   z-index: 10;
+  float: left;
+  /* margin: 40px auto; */
+  display: none;
 }
 #popup {
-  width: 0;
-  height: 0;
-  background-color: white;
-  padding: 20px;
-  margin: 40px auto;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  /* background-color: white; */
+  /* padding: 7.81%; */
+  /* margin: 40px auto; */
+}
+#popup li {
+  box-sizing: border-box;
+  height: 40px;
+  /* padding: 16px 0; */
+  padding-top: 11px;
+  border-bottom: 1px solid #ebebeb;
+  font-size: 18px;
+}
+#popup li:first-child{
+  height: 35px;
+  padding-top: 5px;
+}
+#popup li a {
+  text-decoration: none;
+  color: black;
+  width: 100%;
+  height: 100%;
+  display: block;
 }
 .togleScroll{
   overflow: hidden;
+}
+
+@media (max-width: 999px) {
+  #column-right {
+    display: none;
+  }
+}
+
+@media (max-width: 540px)  {
+  #datetime{
+    display: none;
+  }
+}
+@media (max-width: 400px)  {
+  #black-bar h1 {
+    font-size: 14px;
+  }
+}
+@media (max-width: 332px)  {
+#black-bar h1 {
+  font-size: 13px;
+}
+}
+@media (max-width: 320px){
+  #page-nav , #city , #currency-container , #weather {
+    display: none;
+  }
+
+  #header {
+    height: 50px;
+    /* box-sizing: border-box; */
+    /* width: 100%; */
+    /* padding-left: 25px; */
+    /* padding-right: 25px; */
+  }
+  #header .fixed-container {
+    padding-left: 25px;
+    padding-right: 25px;
+    box-sizing: border-box;
+    height: 100%;
+  }
+  #black-bar {
+    height: 50px;
+  }
+  #black-bar-content {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+  #search {
+    display: none;
+  }
+  #logo {
+    margin: 12px 11px 12px 29px;
+    width: 185px;
+    height: 26px;
+    float: left;
+
+    /* display: none; */
+  }
+  #logo img {
+    width: 26px;
+  }
+  #logo span {
+    font-size: 13px;
+    width: 150px;
+  }
+  #mobile-nav {
+    float: left;
+    display: block;
+
+    /* display: none; */
+  }
+  #mobile-search {
+    display: block;
+    float: right;
+    margin-top: 17px;
+    margin-bottom: 17px;
+    border: none;
+  }
 }
