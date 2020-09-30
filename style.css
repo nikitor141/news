@@ -315,6 +315,10 @@ nav li {
                   color: #91919f;
                   text-decoration: none;
             }
+            #column-left h3 {
+              font-size: 14px;
+              font-weight: normal;
+            }
 .theme-props {
     float: left;
     display: inline-block;
@@ -377,7 +381,7 @@ nav li {
             height: 100%;
 
 }
-            #news-central-text {
+            .news-central-text {
                   padding-top: 136px;
                   display: inline-block;
 }
@@ -385,16 +389,16 @@ nav li {
                         margin: 0;
                         font-size: 25px;
 }
-            #news-central-theme {
+            .news-central-theme {
                   position: absolute;
                   margin-top: 104px;
                   font-size: 12px;
 }
-                  #news-central-theme a {
+                  .news-central-theme a {
                         color: #ffffff;
                         text-decoration: none;
 }
-            #news-central-props {
+            .news-central-props {
                   font-size: 12px;
                   position: absolute;
                   bottom: 42px;
@@ -409,7 +413,9 @@ nav li {
 
 }
 
-
+#cremea {
+  height: 100%;
+}
 
 #central-news {
       width: 422px;
@@ -455,7 +461,10 @@ nav li {
 
 }
 
-
+/* #column-center ul li:not(:first-child){
+  height: 239.15px;
+  width: 201px;
+} */
 
 #news1 {
       float: left;
@@ -511,16 +520,16 @@ nav li {
       padding-bottom: 16px;
       margin-bottom: 16px;
 }
-#hot-news-item {
+.hot-news-item {
       padding-left: 0;
       margin-bottom: 20px;
     height: auto;
 }
-#hot-news-item-text {
+.hot-news-item-text {
       margin-bottom: 14px;
       font-size: 13px
 }
-#hot-news-item-props {
+.hot-news-item-props {
       font-size: 11px;
 }
 #hot-news-central-item {
@@ -533,7 +542,7 @@ nav li {
       color: black;
       text-decoration: none;
 }
-#hot-float-right {
+.hot-float-right {
     margin-right: 190px
 }
 
@@ -708,7 +717,7 @@ footer {
   font-size: 13px;
 }
 }
-@media (max-width: 360px){
+@media (max-width: 320px){
   #page-nav , #city , #currency-container , #weather {
     display: none;
   }
