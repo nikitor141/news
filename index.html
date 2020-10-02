@@ -119,15 +119,66 @@
     </div>
   </nav>
   <div id="shadow"></div>
+
+
+
+
+
+
+
+
+
+
   <main id="central-container">
     <div class="fixed-container">
+
+      <script>
+        function date() {
+          var d = new Date();
+          var day = d.getDate();
+          var mnt = new Array("января", "февраля", "марта", "апреля", "мая",
+            "июня", "июля", "авгуса", "сентября", "октября", "ноября", "декабря");
+          var wek = new Array("Вс", "Пн", "Вт", "Ср", "Чт",
+            "Пт", "Сб");
+
+          if (day <= 9) day = day;
+          $("#real-date").html(day + "&nbsp" + mnt[d.getMonth()] + ",&nbsp" + wek[d.getUTCDay()]);
+        }
+        setTimeout("date()", 10);
+        setInterval("date()", 1000);
+      </script>
+
+      <script>
+        function time() {
+          var d = new Date();
+          var hrs = d.getHours();
+          var min = d.getMinutes();
+          if (hrs <= 9) hrs = "0" + hrs;
+          if (min <= 9) min = "0" + min;
+          $(".real-time").html(hrs + ":" + min + "&nbsp;&nbsp;");
+        }
+        setTimeout("time()", 10);
+        setInterval("time()", 1000);
+      </script>
+
+      <div id="info">
+        <div id="real-date"></div>
+        <div id="mobile-time">
+          <span class="real-time"></span>
+        </div>
+        <div id="weather2">
+          <span id="temperature2">+22 &deg;C</span>
+        </div>
+      </div>
+
+
       <section id="column-left">
         <h2 class="h2">Новости дня</h2>
         <ul>
           <li>
             <article class="news-item">
               <div class="news-item-text">
-                <h3>Кот Ахилл предсказал <br> победу российской сборной <br> над Египтом на ЧМ-2018</h3>
+                <h3>Кот Ахилл предсказал победу российской сборной над Египтом на ЧМ-2018</h3>
               </div>
               <div class="news-item-props">
                 <span class="theme-props"><a href="#">/ЧМ по футболу</a></span>
@@ -141,7 +192,7 @@
           <li>
             <article class="news-item">
               <div class="news-item-text">
-                <h3>«Нафтогаз»: суд разрешил <br> заморозить активы «Газпрома» <br> в Великобритании</h3>
+                <h3>«Нафтогаз»: суд разрешил заморозить активы «Газпрома» в Великобритании</h3>
               </div>
               <div class="news-item-props">
                 <span class="theme-props"> <a href="#">/Политика</a></span>
@@ -155,7 +206,7 @@
           <li>
             <article class="news-item">
               <div class="news-item-text">
-                <h3>Минтранс предписал <br> оборудовать общественный <br> транспорт кондиционерами</h3>
+                <h3>Минтранс предписал оборудовать общественный&nbsp;транспорт кондиционерами</h3>
               </div>
               <div class="news-item-props">
                 <span class="theme-props"><a href="#">/Транспорт</a></span>
@@ -169,7 +220,7 @@
           <li>
             <article class="news-item">
               <div class="news-item-text">
-                <h3>Летние кафе Москвы <br> временно закроются из-за <br> непогоды</h3>
+                <h3>Летние кафе Москвы временно закроются из-за непогоды</h3>
               </div>
               <div class="news-item-props">
                 <span class="theme-props"> <a href="#">/Погода</a></span>
@@ -183,7 +234,7 @@
           <li>
             <article class="news-item">
               <div class="news-item-text">
-                <h3>Комплексное благоустройство <br>Щелковского шоссе завершится <br> в июне</h3>
+                <h3>Комплексное благоустройство Щелковского&nbsp;шоссе завершится в июне</h3>
               </div>
               <div class="news-item-props">
                 <span class="theme-props"><a href="#">/Транспорт</a></span>
@@ -197,7 +248,7 @@
           <li>
             <div class="news-item">
               <div class="news-item-text">
-                <h3>В Москве назвали самое <br> популярное мороженое <br> у болельщиков ЧМ-2018</h3>
+                <h3>В Москве назвали самое популярное мороженое у болельщиков ЧМ-2018</h3>
               </div>
               <div class="news-item-props">
                 <span class="theme-props"><a href="#">/ЧМ по футболу</a></span>
@@ -235,64 +286,64 @@
 
 
           <!-- <section id="central-news"> -->
-            <li>
-              <article id="news1">
-                <div class="central-news-block">
-                  <img alt="banner" src="img/navalny.png" width="201">
-                  <h2>Алексей Навальный объявил<br> акцию против пенсионной<br> реформы 1 июля</h2>
-                  <div class="news-central1234-props">
-                    <a href="#">/&nbsp;Политика</a>
-                    <div class="news-time1234">10:48</div>
-                    <div class="news-comment-count1234">15</div>
-                  </div>
+          <li>
+            <article id="news1">
+              <div class="central-news-block">
+                <img alt="banner" src="img/navalny.png">
+                <h2>Алексей Навальный объявил акцию против пенсионной реформы 1&nbsp;июля</h2>
+                <div class="news-central1234-props">
+                  <a href="#">/&nbsp;Политика</a>
+                  <div class="news-time1234">10:48</div>
+                  <div class="news-comment-count1234">15</div>
                 </div>
-              </article>
-            </li>
+              </div>
+            </article>
+          </li>
 
 
-            <li>
-              <article id="news2">
-                <div class="central-news-block">
-                  <img alt="banner" src="img/passport-banner.png" width="201">
-                  <h2>Дума увеличила пошлины<br> за выдачу загранпаспортов<br> и водительских прав</h2>
-                  <div class="news-central1234-props">
-                    <a href="#">/&nbsp;Общество</a>
-                    <div class="news-time1234">12:33</div>
-                    <div class="news-comment-count1234">36</div>
-                  </div>
+          <li>
+            <article id="news2">
+              <div class="central-news-block">
+                <img alt="banner" src="img/passport-banner.png">
+                <h2>Дума увеличила пошлины за выдачу загранпаспортов и водительских прав</h2>
+                <div class="news-central1234-props">
+                  <a href="#">/&nbsp;Общество</a>
+                  <div class="news-time1234">12:33</div>
+                  <div class="news-comment-count1234">36</div>
                 </div>
-              </article>
-            </li>
+              </div>
+            </article>
+          </li>
 
 
-            <li>
-              <article id="news3">
-                <div class="central-news-block">
-                  <img alt="banner" src="img/cute-banner.png" width="201">
-                  <h2>В России заработал<br> стриминговый сервис<br> YouTube</h2>
-                  <div class="news-central1234-props">
-                    <a href="#">/&nbsp;Интернет</a>
-                    <div class="news-time1234">11:17</div>
-                    <div class="news-comment-count1234">10</div>
-                  </div>
+          <li>
+            <article id="news3">
+              <div class="central-news-block">
+                <img alt="banner" src="img/cute-banner.png">
+                <h2>В России заработал стриминговый сервис YouTube</h2>
+                <div class="news-central1234-props">
+                  <a href="#">/&nbsp;Интернет</a>
+                  <div class="news-time1234">11:17</div>
+                  <div class="news-comment-count1234">10</div>
                 </div>
-              </article>
-            </li>
+              </div>
+            </article>
+          </li>
 
 
-            <li>
-              <article id="news4">
-                <div class="central-news-block">
-                  <img alt="banner" src="img/pidor-banner.png" width="201">
-                  <h2>Кейн признан лучшим<br> игроком матча ЧМ-2018<br> Тунис — Англия</h2>
-                  <div class="news-central1234-props">
-                    <a href="#">/&nbsp;Политика</a>
-                    <div class="news-time1234">11:39</div>
-                    <div class="news-comment-count1234">25</div>
-                  </div>
+          <li>
+            <article id="news4">
+              <div class="central-news-block">
+                <img alt="banner" src="img/pidor-banner.png">
+                <h2>Кейн признан лучшим игроком матча ЧМ-2018 Тунис&nbsp;—&nbsp;Англия</h2>
+                <div class="news-central1234-props">
+                  <a href="#">/&nbsp;Политика</a>
+                  <div class="news-time1234">11:39</div>
+                  <div class="news-comment-count1234">25</div>
                 </div>
-              </article>
-            </li>
+              </div>
+            </article>
+          </li>
 
 
           <!-- </section> -->
@@ -303,10 +354,12 @@
         <img alt="banner" src="img/banner2.png">
       </aside>
     </div>
+
+
     <section id="special-news">
       <div class="fixed-container">
         <section id="pekin">
-          <img alt="banner" src="img/special-news-banner.jpg" width="572">
+          <img alt="banner" src="img/special-news-banner.jpg">
           <div class="news-central-item" id="hot-news-central-item">
             <div class="news-central-theme">
               <a href="https://ru.wikipedia.org/wiki/Политика" target="_blank">/&nbsp;Политика</a>
