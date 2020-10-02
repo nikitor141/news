@@ -7,11 +7,11 @@ $(function() {
 
 $('#mobile-search').click(function(){
 
-  $('#mobile-nav , #logo').hide();
-  $('#mobile-search-cross , #mobile-search-form').show();
+  $('#mobile-nav , #logo').hide(400);
+  $('#mobile-search-cross , #mobile-search-form').show(400);
   if($('#popup-container').is(':visible')){
-    $('#popup-container').hide();
-    $('#black-bar').show();
+    $('#popup-container').hide(400);
+    $('#black-bar').show(400);
     // $('#header').css('position', 'fixed');
     $('html').css('overflow','auto');
     $('#mobile-nav').css({
@@ -19,13 +19,13 @@ $('#mobile-search').click(function(){
       'width': '20px',
       'height' : '16px'
     });
-    $('#mobile-nav-shadow').hide();
+    $('#mobile-nav-shadow').hide(400);
   }
 });
 
 $('#mobile-search-cross').click(function(){
-  $('#mobile-nav , #logo').show();
-  $('#mobile-search-cross , #mobile-search-form').hide();
+  $('#mobile-nav , #logo').show(400);
+  $('#mobile-search-cross , #mobile-search-form').hide(400);
   $('#mobile-search-form').val('');
 
 });
@@ -33,8 +33,8 @@ $('#mobile-search-cross').click(function(){
 $('#mobile-nav').click(function(){
   if($('#popup-container').is(':visible')){
 
-    $('#popup-container').hide();
-    $('#black-bar').show();
+    $('#popup-container').hide(400);
+    $('#black-bar').show(400);
     // $('#header').css('position', 'fixed');
     $('html').css('overflow','auto');
     $('#mobile-nav').css({
@@ -42,12 +42,12 @@ $('#mobile-nav').click(function(){
       'width': '20px',
       'height' : '16px'
     });
-    $('#mobile-nav-shadow').hide();
+    $('#mobile-nav-shadow').hide(400);
   }
   else{
 
-    $('#popup-container').show();
-    $('#black-bar').hide();
+    $('#popup-container').show(400);
+    $('#black-bar').hide(400);
     // $('#header').css('position', 'fixed');
     $('html').css('overflow','hidden');
     $('#mobile-nav').css({
@@ -55,10 +55,11 @@ $('#mobile-nav').click(function(){
       'width': '18px',
       'height' : '18px'
     });
-    $('#mobile-nav-shadow').show();
+    $('#mobile-nav-shadow').show(400);
   }
 
 });
+
 
 
 // if($('#popup-container').is(':visible')){
