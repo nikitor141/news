@@ -155,7 +155,7 @@
           var min = d.getMinutes();
           if (hrs <= 9) hrs = "0" + hrs;
           if (min <= 9) min = "0" + min;
-          $(".real-time").html(hrs + ":" + min + "&nbsp;&nbsp;");
+          $(".real-time").html(hrs + ":" + min);
         }
         setTimeout("time()", 10);
         setInterval("time()", 1000);
@@ -361,13 +361,13 @@
         <section id="pekin">
           <img alt="banner" src="img/special-news-banner.jpg">
           <div class="news-central-item" id="hot-news-central-item">
-            <div class="news-central-theme">
+            <div class="news-central-theme hot-news-central-theme">
               <a href="https://ru.wikipedia.org/wiki/Политика" target="_blank">/&nbsp;Политика</a>
             </div>
             <div class="news-central-text">
               <h2 class="h2-banner">В Крыму отреагировали<br> на слова Кравчука<br> о возврате полуострова</h2>
             </div>
-            <div class="news-central-props">
+            <div class="news-central-props hot-news-central-props">
               <span class="news-central-date">19 Июня 2018</span>
               <span class="news-central-time" id="hot-clock">10:48</span>
 
