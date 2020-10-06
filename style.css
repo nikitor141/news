@@ -3,7 +3,7 @@ html, body {
     padding: 0;
     font-family: Arial;
     min-width: 320px;
-
+    height: 100%;
 }
 *{
   margin: 0;
@@ -603,7 +603,8 @@ nav li {
 
 #footer-background {
     background-color: #00122f;
-    height: 311px;
+    min-height: 311px;
+    height: 100%;
 }
 #footer-content, #footer-content a {
     color: white;
@@ -620,7 +621,9 @@ nav li {
 #theme-list li {
     margin-bottom: 20px;
 }
-
+#mobile-theme-list {
+  display: none;
+}
 
 #footer-links {
     float: left;
@@ -682,20 +685,21 @@ nav li {
     padding-left: 29px;
 }
 #footer-box {
-    height: 260px;
+    min-height: 260px;
     border-bottom: 1px solid #26354e;
 }
 #footer-urid {
     color: #727882;
     font-size: 14px;
     text-align: center;
-    height: 50px;
+    min-height: 50px;
 }
 #footer-urid div {
     margin-top: 15px;
 }
 footer {
     overflow: hidden;
+
 }
 #mobile-nav-shadow {
   margin: 0;
@@ -883,8 +887,42 @@ footer {
     /* margin: 0 auto; */
     /* width: 270px; */
     display: flex;
-
   }
+
+footer {
+  min-height: 800px;
+  height: 100%;
+}
+#theme-list {
+  margin-right: 10%;
+  float: none;
+}
+#theme-list {
+  display: none;
+}
+#mobile-theme-list {
+    columns: 2;
+    margin-right: 10px;
+    padding-top: 60px;
+    padding-bottom: 30px;
+    display: block;
+}
+#mobile-theme-list li {
+    margin-bottom: 20px;
+}
+#mobile-theme-list a {
+  color: white;
+  text-decoration: none;
+}
+#footer-box{
+  border-top: 1px solid #26354e;
+  height: 480px;
+}
+#footer-links {
+  float: none;
+  margin-right: 10%;
+  margin-bottom: 40px;
+}
 
 }
 @media (max-width: 320px){
