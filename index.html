@@ -43,7 +43,7 @@
     </div>
   </div>
   <div id="header">
-    <div class="fixed-container">
+    <div class="fixed-container" id="flex-header">
 
       <button id="mobile-nav"></button>
 
@@ -67,18 +67,9 @@
           <option value="Ekb">Екатеринбург</option>
         </select>
       </div>
-      <div id="currency-container">
-        <div id="EUR">
-          <span id="EUR-name">EUR -</span>
-          <span id="EUR-CURS">89</span>
-        </div>
-        <div id="USD">
-          <span id="usd-name">USD -</span>
-          <span id="USD-CURS">74</span>
-        </div>
-      </div>
+
       <div id="weather">
-        <span id="temperature">+22 &deg;C</span>
+        <span id="temperature">+22&nbsp;&deg;C</span>
       </div>
       <form id="search">
         <input id="search-form" type="search" placeholder="Поиск по сайту" name="search">
@@ -104,7 +95,7 @@
   </div>
 
   <nav id="page-nav">
-    <div class="fixed-container">
+    <div class="fixed-container" id="flex-page-nav">
       <ul id="menu">
         <li id="li1"><a href="#" id="main">Главная</a></li>
         <li id="li2"><a href="#" id="polite">Политика</a></li>
@@ -130,7 +121,7 @@
 
 
   <main id="central-container">
-    <div class="fixed-container">
+    <div class="fixed-container central-flex-container">
 
       <script>
         function date() {
